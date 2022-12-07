@@ -46,3 +46,7 @@ CRUD é um acrônimo para **C**reate, **R**ead, **U**pdate and **D**elete. Em po
 
 
 ---
+
+## Próximos passos:
+
+Usar BCrypt para criptografia de senha do usuário.
