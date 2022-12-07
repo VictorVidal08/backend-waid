@@ -1,6 +1,6 @@
 const SocialPost = (sequelize, DataTypes) => {
     const SocialPost = sequelize.define('SocialPost', {
-      id: { type: DataTypes.INTEGER, primaryKey: true },
+      id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true  },
       title: DataTypes.STRING,
       content: DataTypes.STRING,
       userId: DataTypes.INTEGER,

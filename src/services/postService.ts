@@ -1,4 +1,5 @@
 const { SocialPost, User } = require('../database/models');
+const sequelize = require('sequelize');
 
 export const findAll = async () => {
     const result = await SocialPost.findAll({
@@ -12,3 +13,15 @@ export const findAll = async () => {
       });
     return result;
  };
+
+ export const create = async (title: string, content: string, userId: number) => {
+    const result = await SocialPost.create({ 
+      title,
+      content,
+      userId,
+      published: sequelize.literal('CURRENT_TIMESTAMP'),
+      updated: sequelize.literal('CURRENT_TIMESTAMP') 
+    });
+    
+    return result;
+ }
