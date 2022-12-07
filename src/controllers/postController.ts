@@ -31,3 +31,14 @@ export const deletePost = async (req: Request, res: Response) => {
         return res.status(500).json({ message: 'SERVER ERROR - ver arquivo postController' });
     }
 }
+
+export const updatePost = async (req: Request, res: Response) => {
+    try {
+        const { id } = req.params;
+        const { title, content } = req.body;
+        await postService.updatePost(id, title, content);
+        return res.status(200).json({ message: 'Post updated successfully' });
+    } catch (error) {
+        return res.status(500).json({ message: 'SERVER ERROR - ver arquivo postController' });
+    }
+}

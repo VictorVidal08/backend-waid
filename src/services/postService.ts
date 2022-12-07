@@ -30,3 +30,8 @@ export const findAll = async () => {
     const result = await SocialPost.destroy({ where: { id } });
     return result;
  }
+
+ export const updatePost = async (id: number, title: string, content: string) => {
+    const result = await SocialPost.update({ title, content }, { where: { id } });
+    return result;
+ }
