@@ -7,5 +7,6 @@ const postRouter = Router();
 
 postRouter.get('/posts', validToken, postController.findAll);
 postRouter.post('/post', postController.create);
+postRouter.delete('/post/:id', postController.deletePost);
 
 export default postRouter;

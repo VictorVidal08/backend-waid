@@ -25,3 +25,8 @@ export const findAll = async () => {
     
     return result;
  }
+
+ export const deletePost = async (id: number) => {
+    const result = await SocialPost.destroy({ where: { id } });
+    return result;
+ }

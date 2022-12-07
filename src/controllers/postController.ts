@@ -21,3 +21,13 @@ export const create = async (req: Request, res: Response) => {
         return res.status(500).json({ message: 'SERVER ERROR - ver arquivo postController' });
     }
 }
+
+export const deletePost = async (req: Request, res: Response) => {
+    try {
+        const { id } = req.params;
+        await postService.deletePost(id);
+        return res.status(200).json({ message: 'Post deleted successfully' });
+    } catch (error) {
+        return res.status(500).json({ message: 'SERVER ERROR - ver arquivo postController' });
+    }
+}
