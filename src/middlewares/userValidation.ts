@@ -1,5 +1,5 @@
 const joi = require('joi');
-const { Request, Response, NextFunction } = require('express');
+export const { Request, Response, NextFunction } = require('express');
 
 const userSchema = joi.object({
     email: joi.string().email({ minDomainSegments: 2 }).required(),
