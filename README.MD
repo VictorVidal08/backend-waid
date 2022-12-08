@@ -4,6 +4,10 @@ Esse projeto foi desenvolvido como teste técnico da WAID!!
 
 Aqui você vai encontrar os detalhes de como foi o desenvolvimento do projeto e quais foram os requisitos técnicos necessários para a entrega do desafio.
 
+## Deploy:
+
+https://backend-waid-production.up.railway.app/posts
+
 ---
 
 # Funcionalidades do projeto:
