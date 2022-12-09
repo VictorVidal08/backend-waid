@@ -4,9 +4,15 @@ Esse projeto foi desenvolvido como teste técnico da WAID!!
 
 Aqui você vai encontrar os detalhes de como foi o desenvolvimento do projeto e quais foram os requisitos técnicos necessários para a entrega do desafio.
 
-## Deploy:
+## Tecnologias utilizadas:
 
-https://backend-waid-production.up.railway.app/posts
+- TypesCript;
+- Node
+- Express;
+- Jwt (Json Web Token);
+- Sequelize;
+- MySql;
+- Joi para validações.
 
 ---
 
@@ -322,3 +328,4 @@ A rota retorna o status 204, <code>'Post deleted successfully'</code>.
 ## Próximos passos:
 
 Usar BCrypt para criptografia de senha do usuário.
+Implementação de testes.
