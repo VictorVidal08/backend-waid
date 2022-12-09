@@ -8,7 +8,7 @@ export const login = async (req: Request, res: Response) => {
     try {
         const result = await loginService.login(loginData);
         if (!result) return res.status(401).json({ message: 'Incorrect username or password' });
-        return res.status(200).json({ token: result });
+        return res.status(200).json(result);
     } catch (error) {
         console.error(error);
         return res.status(500).json({ message: 'ver arquivo loginController' });
