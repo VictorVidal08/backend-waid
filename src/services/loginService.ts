@@ -6,7 +6,7 @@ export const login = async (loginData: typeof ILogin) => {
     const { email } = loginData;
     const result = await User.findOne({
         attributes: [
-            'email', 'password', 'image', 'id'
+            'email', 'password', 'image', 'id', 'userName'
         ],
         where: { email },
         raw: true, // sequelize retorna uma classe. raw faz com que retorne uma classe como objeto.
