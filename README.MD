@@ -1,8 +1,6 @@
 # Boas vindas ao repositório backend do projeto <b>Social Media</b>!
 
-Esse projeto foi desenvolvido como teste técnico da WAID!!
-
-Aqui você vai encontrar os detalhes de como foi o desenvolvimento do projeto e quais foram os requisitos técnicos necessários para a entrega do desafio.
+Esse projeto foi desenvolvido com o objetivo de simular uma rede social!!
 
 ## Tecnologias utilizadas:
 
